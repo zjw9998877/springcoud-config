@@ -8,7 +8,7 @@ curl -X POST "http://localhost:3355/actuator/refresh"
 
 2.对于消息总线的发送命令：
     1:全部client生效的命令 curl -X POST "http://localhost:3344/actuator/bus-refresh"
-    2：指定client生效的命令 curl -X POST "http://localhost:3344/actuator/bus-refresh/{distination}"  //{distination}指定端口号                       
+    2：指定client生效的命令 curl -X POST "http://localhost:3344/actuator/bus-refresh/{distination}"  //{distination}指定服务name+指定端口号                       
 
 
 问题：

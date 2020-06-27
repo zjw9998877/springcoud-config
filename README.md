@@ -6,6 +6,9 @@ springcloud配置中心
 curl -X POST "http://localhost:3355/actuator/refresh"
 
 
+2.对于消息总线的发送命令：curl -X POST "http://localhost:3344/actuator/bus-refresh"
+
+
 
 问题：
 
@@ -21,4 +24,6 @@ firewall-cmd --list-ports
 firewall-cmd --zone=public --add-port=5672/tcp --permanent
 重启防火墙：
 firewall-cmd --reload
+
+
 
